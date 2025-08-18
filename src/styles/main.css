@@ -62,10 +62,18 @@
     font-weight: 800;
   }
 
+  .card__title {
+    text-decoration: none;
+  }
+
   .card__title h2 {
     color: var(--text-dark);
     font-size: var(--font-size-4);
     font-weight: bold;
+
+    &:hover {
+      color: var(--color-brand);
+    }
   }
 
   .card__description {
