@@ -1,16 +1,49 @@
 ---
-
+import { Font } from "astro:assets";
+import "../styles/main.css";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/images/favicon.png"
+    />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Frontend Mentor | Blog preview card</title>
+    <Font cssVariable="--figtree" preload />
+  </head>
+  <body>
+    <article class="card">
+      <img
+        src="assets/images/illustration-article.svg"
+        alt="card illustration"
+        class="card__image"
+      />
+      <ul class="card__tags">
+        <li class="card__tag">Learning</li>
+      </ul>
+      <p class="card__publish-date">
+        Published
+        <time datetime="2023-12-21">21 Dec 2023</time>
+      </p>
+      <a href="#" class="card__title"><h2>HTML & CSS foundations</h2></a>
+      <p class="card__description">
+        These languages are the backbone of every website, defining structure,
+        content, and presentation.
+      </p>
+      <footer class="card__footer">
+        <img
+          src="assets/images/image-avatar.webp"
+          alt="author"
+          class="card__avatar"
+        />
+        <p class="card__author-name">Greg Hooper</p>
+      </footer>
+    </article>
+  </body>
 </html>
