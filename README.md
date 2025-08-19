@@ -31,7 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL:
+  [Solution](https://www.frontendmentor.io/solutions/blog-preview-card-component-wLRW8WRaD9)
 - Live Site URL:
   [https://blog-preview-card.justin-scopelleti.workers.dev](https://blog-preview-card.justin-scopelleti.workers.dev)
 
